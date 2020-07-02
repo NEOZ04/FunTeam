@@ -9,6 +9,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Chat from './tabs/Chat';
 import Map from './tabs/Map';
 import Profile from './tabs/Profile';
+import Notif from './tabs/Notif';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,7 +32,7 @@ class Home extends React.Component {
       }}>
         <Tab.Screen name="Chat" component={Chat} />
         <Tab.Screen name="Map" component={Map} />
-        <Tab.Screen name="Notif" component={Chat} />
+        <Tab.Screen name="Notif" component={Notif} />
         <Tab.Screen name="Profile" component={Profile} />
       </Tab.Navigator>
     );
